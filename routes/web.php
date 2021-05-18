@@ -37,29 +37,30 @@ Route::get('arreglos', function(){
 Route :: get('paises', function(){
     $paises= ["Colombia" =>[
                 "capital" => "bogota",
-                "poneda" => "peso",
-                "poblacion" => 51
+                "moneda" => "peso",
+                "poblacion" => "51M"
     ],
               "Peru" =>[
                   "capital" => "lima",
                   "moneda" => "soles",
-                  "poblacion" => 33.19
+                  "poblacion" => "33.19M"
 
                ],
               "paraguay"=> [
                     "capital" => "Asuncion",
                     "moneda"  => "Guarani",
-                    "poblacion" => 7
+                    "poblacion" => "7M"
+              ],
+              "Argentina"=> [
+                  "capital" => "Buenos Aires",
+                  "moneda" => "Peso argentino",
+                  "poblacion" => "42M"
               ]
             ];
+        //Llevar el arreglo de paises el primer valor que se ingresa va a ser un apodo y el otro el arreglo
+        return view('paises')->with("paises", $paises);
 
 
     //recorrer arreglo de paises
-    foreach($paises as $nombre => $pais){
-    echo "<h1>$nombre </h1>";
-    echo "<pre>";
-    print_r($pais["capital"]);
-    echo "</pre>";
-    echo "<hr />";
-    }
+
 });
