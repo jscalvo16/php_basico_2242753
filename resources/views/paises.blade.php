@@ -27,7 +27,6 @@
                     <td class="text-primary">{{$pais["moneda"]}}</td>
                     <td class="text-primary">{{$pais["poblacion"]}}</th>
                 </tr>
-
             @endforeach
         <tbody>
     </table>

@@ -64,3 +64,6 @@ Route :: get('paises', function(){
     //recorrer arreglo de paises
 
 });
+Route :: get('formulario', 'MetabuscadorController@formulario');
+
+Route ::post('buscar_termino', "MetabuscadorController@buscar_termino");
