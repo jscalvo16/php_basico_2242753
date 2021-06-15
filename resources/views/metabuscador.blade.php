@@ -20,10 +20,8 @@
     <label class="col-md-4 control-label" for="textinput">1. Ingrese el termino de busqueda</label>
     <div class="col-md-5">
     <input id="textinput" name="termino" type="text" placeholder="" class="form-control input-md">
-
     </div>
     </div>
-
     <!-- Multiple Radios -->
     <div class="form-group">
     <label class="col-md-4 control-label" for="motores">2. Seleccione el motor de busqueda</label>
